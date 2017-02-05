@@ -22,14 +22,14 @@ void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	auto PlayerTank = GetPlayerTank();
-	if (!PlayerTank)
+	if (GetPlayerTank())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("TankAIController can't find tank."));
-	}
-	else
-	{
-		GetControlledTank()->AimAt(PlayerTank->GetActorLocation());
+		//TODO move towards player
+
+		//Aim towards the player
+		GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+
+		//Fire if ready
 	}
 }
 
