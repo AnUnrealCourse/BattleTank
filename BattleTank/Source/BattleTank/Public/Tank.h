@@ -5,9 +5,9 @@
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h" // Put new includes above
 
-
+//Foward delcarations
 class UTankAimingComponent;
-class UTankBarrel; //Foward delcaration
+class UTankBarrel; 
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -34,6 +34,6 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 100000.f; //TODO Find sensible starting value
+	float LaunchSpeed = 8000.f; 
 	
 };
