@@ -7,6 +7,7 @@
 
 //Foward Declaration
 class UTankBarrel;
+class UTankTurret;
 
 /*
 * Used for tank aiming and delegates to tank 
@@ -22,9 +23,7 @@ public:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 
-	void SetBarrelReference(UTankBarrel* BarrelToSet);
-
-	//TODO add SetTurretReference
+	void SetBarrelAndTurretReference(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet);
 
 	void AimAt(FVector HitLocation, float LaunchSpeed);
 
@@ -32,6 +31,8 @@ private:
 
 	UTankBarrel* Barrel = nullptr;
 
-	void MoveBarrelTowards(FVector AimDirection);
+	UTankTurret* Turret = nullptr;
+
+	void MoveTankTowards(FVector AimDirection);
 	
 };
