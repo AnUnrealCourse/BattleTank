@@ -40,3 +40,9 @@ void ATank::SetBarrelAndTurretReference(UTankBarrel* BarrelToSet, UTankTurret* T
 {
 	TankAimingComponent->SetBarrelAndTurretReference(BarrelToSet, TurretToSet);
 }
+
+void ATank::Fire()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Projectile Fired."));
+}
+
