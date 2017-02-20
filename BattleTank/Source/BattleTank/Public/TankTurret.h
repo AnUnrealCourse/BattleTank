@@ -6,9 +6,9 @@
 #include "TankTurret.generated.h"
 
 /**
- * 
+ * TankTurret rotates the turret of the tank for aiming
  */
-UCLASS(meta = (BlueprintSpawnableComponent))//, hidecategories = ("Collision"))
+UCLASS(meta = (BlueprintSpawnableComponent))
 class BATTLETANK_API UTankTurret : public UStaticMeshComponent
 {
 	GENERATED_BODY()
