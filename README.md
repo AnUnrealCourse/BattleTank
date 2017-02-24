@@ -1,4 +1,4 @@
-# SECTION 4 - Building Escape
+# SECTION 4 - Battle Tank
 An open-world head-to-head tank fight with simple AI, terrain, and advanced control system in Unreal 4.
 
 [Course](https://www.udemy.com/unrealcourse?couponCode=GitHubDiscount)
